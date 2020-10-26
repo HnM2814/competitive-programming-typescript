@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "pretty": false,
+        "noEmit": true,
+        "target": "es2017",
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "suppressImplicitAnyIndexErrors": false,
+        "resolveJsonModule": false, // Note: Do not set to true - resolveJsonModule: true cannot be combined with composite: true (see: https://github.com/microsoft/TypeScript/issues/25636)
+        "esModuleInterop": true,
+        "module": "es2015", // tree-shaking requires es2015 or higher
+        "moduleResolution": "node",
+        "outDir": "dist", // not used, but set to disable the error in this config: "Cannot write file '*/app.json' because it would overwrite input file.
+        "rootDir": "src",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "strictFunctionTypes": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}
