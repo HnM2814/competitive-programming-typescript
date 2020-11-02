@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "AddBinary": "node ./dist/Problems/AddBinary.js"
   },
   "repository": {
     "type": "git",

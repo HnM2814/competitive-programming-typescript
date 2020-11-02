@@ -3,6 +3,7 @@ node_modules
 .vscode/*
 yarn-error.log
 dist/
+CompetitiveProgramming/
 
 .DS_Store
 package-lock.json

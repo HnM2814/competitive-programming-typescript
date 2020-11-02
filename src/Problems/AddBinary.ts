@@ -1,5 +1,12 @@
-
-
+/**
+ * 
+ * @param s1 
+ * @param s2 
+ * 
+ *      1001
+ *      1101
+ *     10110
+ */
 const addBinaryString = (s1:string, s2:string) => {
     if(!s1 && s2) return s2;
     if(s1 && !s2) return s1;
@@ -22,14 +29,16 @@ const addBinaryString = (s1:string, s2:string) => {
             sum += Number(s2[j]);
         }
 
-        result = Math.floor(sum/2)+result;
-        carry = Math.floor(sum%2);
+        result = Math.floor(sum%2)+result;
+        carry = Math.floor(sum/2);
 
         i--;
         j--;
     }
 
+    if(carry) result = carry+result;
+
     return result;
 };
 
-console.log("Binary Addition: ", addBinaryString("0010","1101"));
+console.log("Binary Addition: ", addBinaryString("1001","1101"));
